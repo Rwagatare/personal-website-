@@ -1,4 +1,3 @@
-```javascript
 import React, { useEffect, useRef } from 'react';
 
 const BackgroundGraph = () => {
@@ -156,7 +155,7 @@ const BackgroundGraph = () => {
                         ctx.lineTo(nodeB.x, nodeB.y);
                         // Opacity based on distance
                         const opacity = 1 - distance / maxDistance;
-                        ctx.strokeStyle = `rgba(136, 146, 176, ${ opacity * 0.15})`; // Low opacity edges
+                        ctx.strokeStyle = `rgba(136, 146, 176, ${opacity * 0.15})`; // Low opacity edges
                         ctx.stroke();
                     }
                 }
@@ -203,4 +202,3 @@ const BackgroundGraph = () => {
 };
 
 export default BackgroundGraph;
-```
